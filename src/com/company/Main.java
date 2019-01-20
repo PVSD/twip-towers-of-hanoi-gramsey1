@@ -7,7 +7,8 @@ public class Main {
     public static void main(String[] args) {
         Scanner hi = new Scanner(System.in);
         System.out.println("Tower of Hanoi Game.\nThis program will solve this puzzle for you.\nPlease input number of disks to solve for: ");
-        int control = hi.nextInt();
+        int n = hi.nextInt();
+        towerOfHanoi.towerOfHanoi(n, 'A', 'C', 'B');  // A, B and C are names of rods
 
     }
 }
